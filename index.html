@@ -24,7 +24,11 @@
 <body>
     <main id="app">
         <div class="mail__container">
-            <p>{{randomEmail}}</p>
+            <ul>
+                <li v-for="element in randomEmail">
+                    {{element.response}}
+                </li>
+            </ul>
         </div>
     </main>
     <script src="main.js"></script>
